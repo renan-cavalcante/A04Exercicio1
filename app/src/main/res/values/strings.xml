@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">A04Exercicio1</string>
+    <string name="dataNasc">Data de nascimento:</string>
+    <string name="idade">Idade atual:</string>
+</resources>

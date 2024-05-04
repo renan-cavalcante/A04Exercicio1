@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.vicmikhailau.maskededittext.MaskedEditText
+        android:id="@+id/inputData"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="134dp"
+        android:ems="10"
+        android:hint="dd/mm/aaaa"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:mask="##/##/####" />
+
+    <Button
+        android:id="@+id/btnExec"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="56dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/inputData"
+        app:layout_constraintStart_toStartOf="@+id/inputData"
+        app:layout_constraintTop_toBottomOf="@+id/inputData" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnExec"
+        app:layout_constraintStart_toStartOf="@+id/btnExec"
+        app:layout_constraintTop_toBottomOf="@+id/btnExec" />
+
+    <TextView
+        android:id="@+id/tvDataNasc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:text="@string/dataNasc"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/inputData"
+        app:layout_constraintStart_toStartOf="@+id/inputData" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:text="@string/idade"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvResultado"
+        app:layout_constraintEnd_toStartOf="@+id/btnExec" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
